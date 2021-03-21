@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <title></title>
+</head>
+
+<body>
+
+  <%- include("header") -%>
+  <div class="container mt-3">
+    <div class="diger-kitaplar">
+      <h1 class="text-muted pl-3 text-center">Restorantlarımız</h1>
+
+      <div class="d-flex flex-wrap pt-3">
+  <% for(i=0; i<yanilma.length; i++){  %>
+
+
+        <div class="card mx-3 my-3 " style="width:18rem;">
+          <img height="250"   src="<%=yanilma[i].resim%>" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title  text-center text-muted"> <%=yanilma[i].isim%> </h5>
+            <p class="card-text text-center"> <%=yanilma[i].aciklama%>  </p>
+            <a href="#" class="btn btn-primary">Rezervasyon İçin Tıklayınız</a>
+          </div>
+        </div>
+
+
+
+        <% }  %>
+
+
+
+
+
+
+
+</body>
+
+</html>
